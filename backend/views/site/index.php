@@ -18,7 +18,7 @@ $this->title = 'Dev Thainan';
 
         <div class="row">
             <div class="col-md-12 text-center">
-              <img src="http://localhost/Desafio-Devell/basic/dist/img/gif.gif" />
+              <img src="http://localhost/Desafio-Devell-Advanced/yii-application/backend/dist/img/gif.gif" />
             </div>
         </div>
 
@@ -26,7 +26,7 @@ $this->title = 'Dev Thainan';
   <?php }else{?>
 
     <div class="jumbotron">
-        <h1>Seja bem-vindo <b><i><?php echo Yii::$app->user->identity->username ?></i></b> !</h1>
+        <h1>Seja bem-vindo <b><i></i></b> !</h1>
 
         <p class="lead">Parabéns, você fez seu primeiro acesso à nossa plataforma!</p>
         <!--<p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>-->

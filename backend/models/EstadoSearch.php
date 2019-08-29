@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Estado;
+use backend\models\Estado;
 
 /**
- * EstadoSearch represents the model behind the search form of `app\models\Estado`.
+ * EstadoSearch represents the model behind the search form of `backend\models\Estado`.
  */
 class EstadoSearch extends Estado
 {

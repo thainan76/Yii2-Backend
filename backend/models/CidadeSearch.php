@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Cidade;
+use backend\models\Cidade;
 
 /**
- * CidadeSearch represents the model behind the search form of `app\models\Cidade`.
+ * CidadeSearch represents the model behind the search form of `backend\models\Cidade`.
  */
 class CidadeSearch extends Cidade
 {

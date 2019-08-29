@@ -1,10 +1,10 @@
 <?php
 
-namespace app\controllers;
+namespace backend\controllers;
 
 use Yii;
-use app\models\Credordevedor;
-use app\models\CredordevedorSearch;
+use backend\models\Credordevedor;
+use backend\models\CredordevedorSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

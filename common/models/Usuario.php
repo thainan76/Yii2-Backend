@@ -1,12 +1,13 @@
 <?php
 
-namespace backend\models;
+namespace common\models;
 
 use Yii;
 
 use yii\base\NotSupportedException;
 use yii\db\ActiveRecord;
 use yii\helpers\Security;
+use yii\web\IdentityInterface;
 /**
  * This is the model class for table "usuario".
  *
@@ -30,6 +31,7 @@ use yii\helpers\Security;
  */
 class Usuario extends \yii\db\ActiveRecord
 {
+
 
     /**
      * {@inheritdoc}
@@ -101,8 +103,7 @@ class Usuario extends \yii\db\ActiveRecord
 
     public function getPerfil()
     {
-      //return Usuario::findBySql('SELECT * FROM tipoconta ORDER BY nome ASC')->all();
-      return Tipoconta::find()->all();
+      return Usuario::findBySql('SELECT id, nome FROM tipoconta ORDER BY nome ASC')->all();
     }
 
     public function getIdUsuarios()
@@ -110,8 +111,25 @@ class Usuario extends \yii\db\ActiveRecord
       return Usuario::findBySql('SELECT * FROM usuario')->all();
     }
 
+    public function getIdUsuario($id)
+    {
+      return Usuario::find($id)->one();
+    }
+
     public function getUser($username)
     {
-      return Usuario::findBySql('SELECT id FROM usuario WHERE username = {$username}')->all();
+      return Usuario::findBySql('SELECT id FROM usuario WHERE username = "'.$username.'" ')->all();
     }
+
+    public static function getUsername($username)
+    {
+      //return Usuario::findBySql('SELECT username FROM usuario WHERE username = "'.$username.'" ');
+      return Usuario::find($username)->one();
+    }
+
+    public function getPassword($username)
+    {
+      return Usuario::findBySql('SELECT passwordHash FROM usuario WHERE username = "'.$username.'" ')->all();
+    }
+
 }

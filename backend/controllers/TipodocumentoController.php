@@ -1,10 +1,10 @@
 <?php
 
-namespace app\controllers;
+namespace backend\controllers;
 
 use Yii;
-use app\models\Tipodocumento;
-use app\models\TipodocumentoSearch;
+use backend\models\Tipodocumento;
+use backend\models\TipodocumentoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

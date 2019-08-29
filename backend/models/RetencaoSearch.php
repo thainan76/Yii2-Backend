@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Retencao;
+use backend\models\Retencao;
 
 /**
- * RetencaoSearch represents the model behind the search form of `app\models\Retencao`.
+ * RetencaoSearch represents the model behind the search form of `backend\models\Retencao`.
  */
 class RetencaoSearch extends Retencao
 {

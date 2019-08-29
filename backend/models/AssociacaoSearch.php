@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Associacao;
+use backend\models\Associacao;
 
 /**
- * AssociacaoSearch represents the model behind the search form of `app\models\Associacao`.
+ * AssociacaoSearch represents the model behind the search form of `backend\models\Associacao`.
  */
 class AssociacaoSearch extends Associacao
 {

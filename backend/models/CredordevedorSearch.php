@@ -1,13 +1,13 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Credordevedor;
+use backend\models\Credordevedor;
 
 /**
- * CredordevedorSearch represents the model behind the search form of `app\models\Credordevedor`.
+ * CredordevedorSearch represents the model behind the search form of `backend\models\Credordevedor`.
  */
 class CredordevedorSearch extends Credordevedor
 {

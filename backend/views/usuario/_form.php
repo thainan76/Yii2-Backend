@@ -21,6 +21,7 @@ use yii\widgets\ActiveForm;
         $newClientes[$idCliente['id']] = $idCliente['nome'];
       }
 
+
       foreach($idPerfils as $idPerfil){
         $newPerfils[$idPerfil['id']] = $idPerfil['nome'];
       }
@@ -39,9 +40,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'authKey')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'passwordHash')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'passwordHash')->passwordInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'passwordResetToken')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'passwordResetToken')->passwordInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'createdAt')->textInput() ?>
 

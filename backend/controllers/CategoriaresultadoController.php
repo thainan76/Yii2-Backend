@@ -1,10 +1,10 @@
 <?php
 
-namespace app\controllers;
+namespace backend\controllers;
 
 use Yii;
-use app\models\Categoriaresultado;
-use app\models\CategoriaresultadoSearch;
+use backend\models\Categoriaresultado;
+use backend\models\CategoriaresultadoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
